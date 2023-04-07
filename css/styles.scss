@@ -123,4 +123,21 @@ body{
             }
         }
     }
+    &.open .menuToggle::before{
+        transform: translateY(0px) rotate(45deg);
+    }
+    &.open{
+        width: 250px;
+    }
+    &.open .menuToggle::after{
+        transform: translateY(0px) rotate(-45deg);
+        box-shadow: 0 0 0 #333;
+    }
+    &.open ul li.active{
+        transform: translateX(10px);
+    }
+    &.open ul li a .text{
+        opacity: 1;
+        visibility: visible;
+    }
 }
