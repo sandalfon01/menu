@@ -10,7 +10,7 @@ body {
   background-color: #3d4152;
 }
 
-.navegation {
+.navigation {
   position: fixed;
   inset: 20px 0 20px 20px;
   width: 75px;
@@ -21,7 +21,7 @@ body {
   align-items: center;
   border-radius: 15px;
 }
-.navegation .menuToggle {
+.navigation .menuToggle {
   position: absolute;
   top: 0;
   left: 0;
@@ -34,7 +34,7 @@ body {
   justify-content: flex-start;
   padding: 0 23px;
 }
-.navegation .menuToggle::before {
+.navigation .menuToggle::before {
   content: "";
   position: absolute;
   width: 30px;
@@ -43,7 +43,7 @@ body {
   transform: translateY(-8px);
   transition: 0.5s;
 }
-.navegation .menuToggle::after {
+.navigation .menuToggle::after {
   content: "";
   position: absolute;
   width: 30px;
@@ -53,13 +53,13 @@ body {
   transition: 0.5s;
   box-shadow: 0 -8px 0 #333;
 }
-.navegation ul {
+.navigation ul {
   display: flex;
   flex-direction: column;
   gap: 10px;
   width: 100%;
 }
-.navegation ul li {
+.navigation ul li {
   list-style: none;
   position: relative;
   width: 100%;
@@ -67,20 +67,20 @@ body {
   padding: 0 10px;
   transition: 0.5s;
 }
-.navegation ul li.active {
+.navigation ul li.active {
   transform: translateX(30px);
 }
-.navegation ul li.active a .icon {
+.navigation ul li.active a .icon {
   color: #fff;
   background: var(--clr);
 }
-.navegation ul li.active a .icon::before {
+.navigation ul li.active a .icon::before {
   opacity: 0.5;
 }
-.navegation ul li.active a .text {
+.navigation ul li.active a .text {
   color: var(--clr);
 }
-.navegation ul li a {
+.navigation ul li a {
   position: relative;
   display: flex;
   align-items: center;
@@ -88,7 +88,7 @@ body {
   text-align: center;
   text-decoration: none;
 }
-.navegation ul li a .icon {
+.navigation ul li a .icon {
   position: relative;
   display: block;
   min-width: 55px;
@@ -99,7 +99,7 @@ body {
   font-size: 1.75em;
   color: #222;
 }
-.navegation ul li a .icon::before {
+.navigation ul li a .icon::before {
   content: "";
   position: absolute;
   top: 10px;
@@ -111,7 +111,7 @@ body {
   opacity: 0;
   transition: 0.5s;
 }
-.navegation ul li a .text {
+.navigation ul li a .text {
   position: relative;
   padding: 0 15px;
   height: 60px;
@@ -122,20 +122,20 @@ body {
   visibility: hidden;
   transition: 0.5s;
 }
-.navegation.open .menuToggle::before {
+.navigation.open .menuToggle::before {
   transform: translateY(0px) rotate(45deg);
 }
-.navegation.open {
+.navigation.open {
   width: 250px;
 }
-.navegation.open .menuToggle::after {
+.navigation.open .menuToggle::after {
   transform: translateY(0px) rotate(-45deg);
   box-shadow: 0 0 0 #333;
 }
-.navegation.open ul li.active {
+.navigation.open ul li.active {
   transform: translateX(10px);
 }
-.navegation.open ul li a .text {
+.navigation.open ul li a .text {
   opacity: 1;
   visibility: visible;
 }/*# sourceMappingURL=styles.css.map */
