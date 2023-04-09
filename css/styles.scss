@@ -124,7 +124,7 @@ body{
         }
     }
     &.open .menuToggle::before{
-        transform: translateY(0px) rotate(45deg);
+        transform: translateY(0px) rotate(-45deg);
     }
     &.open{
         width: 250px;
